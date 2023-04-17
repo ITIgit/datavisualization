@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+
+<html lang="en_GB">
+
+
+
+<!-- Mirrored from data.gov.sg/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 12:31:30 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2020-12-29T10:24:02/html5.min.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/select2.css" />
+    <link rel="stylesheet" type="text/css" href="css/datagovsg.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/infocard.css" />
+    <link rel="stylesheet" type="text/css" href="css/plottable.css" />
+
+
+    <script src="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    
+    <title>
+    
+
+    </title>
+
+<style>
+
+</style>
+</head>
+
+<body>
+  
+    <!-- <nav class="site-nav">
+        <div class="container">
+            <a href="index.html">
+                <img class="site-logo" src="images/logo.svg" alt="Data.gov.sg" title="Data.gov.sg" />
+            </a>
+            <a href="index.html" class="site-title">Data.gov.sg</a>
+            <div class="flex-spacer"></div>
+
+            <a class="site-link ga-nav-blog" href='https://blog.data.gov.sg/'>Blog</a>
+            <a class="site-link ga-nav-developers" href='developer.html'>Developers</a>
+            <a class="site-link ga-nav-request" href='https://github.com/datagovsg/datagovsg-datasets/issues/new?title=Dataset%20request:%20%3Cdataset%20title%3E'>Data Request</a>
+
+        </div>
+    </nav> -->
+
+    <div class="collapse topic-collapse">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Economy href="group/economy.html">
+                        <img class="hover-on" src=group_icons/active/economy.svg>
+                        <img class="hover-off" src=group_icons/inactive/economy.svg>
+                        <h5 class="topic-title"><small>Economy</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Education href="group/education.html">
+                        <img class="hover-on" src=group_icons/active/education.svg>
+                        <img class="hover-off" src=group_icons/inactive/education.svg>
+                        <h5 class="topic-title"><small>Education</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Environment href="group/environment.html">
+                        <img class="hover-on" src=group_icons/active/environment.svg>
+                        <img class="hover-off" src=group_icons/inactive/environment.svg>
+                        <h5 class="topic-title"><small>Environment</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Finance href="group/finance.html">
+                        <img class="hover-on" src=group_icons/active/finance.svg>
+                        <img class="hover-off" src=group_icons/inactive/finance.svg>
+                        <h5 class="topic-title"><small>Finance</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Health href="group/health.html">
+                        <img class="hover-on" src=group_icons/active/health.svg>
+                        <img class="hover-off" src=group_icons/inactive/health.svg>
+                        <h5 class="topic-title"><small>Health</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Infrastructure href="group/infrastructure.html">
+                        <img class="hover-on" src=group_icons/active/infrastructure.svg>
+                        <img class="hover-off" src=group_icons/inactive/infrastructure.svg>
+                        <h5 class="topic-title"><small>Infrastructure</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Society href="group/society.html">
+                        <img class="hover-on" src=group_icons/active/society.svg>
+                        <img class="hover-off" src=group_icons/inactive/society.svg>
+                        <h5 class="topic-title"><small>Society</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Technology href="group/technology.html">
+                        <img class="hover-on" src=group_icons/active/technology.svg>
+                        <img class="hover-off" src=group_icons/inactive/technology.svg>
+                        <h5 class="topic-title"><small>Technology</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Transport href="group/transport.html">
+                        <img class="hover-on" src=group_icons/active/transport.svg>
+                        <img class="hover-off" src=group_icons/inactive/transport.svg>
+                        <h5 class="topic-title"><small>Transport</small></h5>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header " style="background-image: url(images/header-home.jpg)">
+        <h1 class="headline container text-center">
+            Government and Justice Sector
+        </h1>
+
+    </header>
+    <main class="site-main">
+
+        <div class="topics-section">
+            <div class="container">
+                <div class="topics-row">
+
+                </div>
+            </div>
+        </div>
+
+<section>
+    <div class="container">
+                <h2 class="section-title text-muted">Government and Justice Sector Performance Report</h2>
+                <div class="row row-scroll">
+                    
+
+   
+            <!--second graphs start  -->
+    <div class="col-md-4 col-sm-6">
+                <div class="content-box">
+                   <div class="chart-box m-2">
+                        <figure class="highcharts-figure">
+                        <div id="peace"></div>
+                               
+                       </figure>
+                       </div>
+               </div>
+
+       <script>
+       Highcharts.chart('peace', {
+       chart: {
+           type: 'area'
+       },
+       title: {
+           text: 'የሰላም ዘርፍ የ2015 በጀት ዓመት የዘጠኝ ወር ዕቅድ አፈጻጸም',
+           align: 'left'
+       },
+       
+       xAxis: {
+           categories: ['የ2015 ዓመታዊ ግብ', 'የ2015 የ9 ወራት ዕቅድ2', 'የ2015 የ9 ወራት አፈጻጸም', 'የ9 ወር አፈፃፀም(በመቶኛ)']
+       },
+       yAxis: {
+           title: {
+           text: 'የዘጠኝ ወር አፈጻጸም '
+           }
+       },
+       credits: {
+           enabled: false
+       },
+       series: [{
+           name: 'ከስልጠና በኋላ ከክልላቸው ውጭ ተሰማርተው አገልግሎት የሰጡ በጎ-ፈቃደኞች በቁጥር',
+           data: [972.4, 4103.7, 977.0, 1525.4]
+       }, {
+           name: 'በዘመናዊ ቴክኖሎጂ የተደገፈ የቅድመ ማስጠንቀቂያ ሥርዓት ሽፋን በመቶኛ',
+           data: [400.2, 68.6, 91.3, 33.2]
+       }, 
+       {
+           name: 'ፈጣን ምላሽ ያገኙ የቅድመ ማስጠንቀቂያ መረጃዎች ምጣኔ በመቶኛ',
+           data: [-3164.6, -13988.5, -3575.8, -6074]
+       },{
+           name: 'በተሰጠ ፈጣን ምላሽ የተደረሰ መግባባትና ማስቀረት የተቻለ ግጭት መጠን በመቶኛ',
+           data: [586.9, 2723.5, 564.4,1373.1]
+       },{
+        name: 'ወደ አንጻራዊ ሰላማዊነት የተሸጋገሩ የግጭት ቀጠናዎች በመቶኛ',
+        data: [586.9, 2723.5, 564.4,1373.1]
+    },{
+        name: 'ሀገር-በቀል የግጭት አፈታት ስርዓት እንዲፈታ የተደረገ አለመግባባቶችና ግጭቶች በቁጥር',
+        data: [586.9, 2723.5, 564.4,1373.1]
+    },{
+        name: 'በአጎራባች ክልሎች ያደገ የህዝብ ለህዝብ መተሳሰብና መተማመን በመቶኛ',
+        data: [586.9, 2723.5, 564.4,1373.1]
+    }
+    
+       ]
+       });
+       </script>
+   </div>
+
+        <div class="col-md-4 col-sm-6">
+                    <div class="content-box">
+                       <div class="chart-box m-2">
+                            <figure class="highcharts-figure">
+                            <div id="foreign"></div>
+                                   
+                           </figure>
+                           </div>
+                   </div>
+
+           <script>
+           Highcharts.chart('foreign', {
+           chart: {
+               type: 'area'
+           },
+           title: {
+               text: 'የ2015 በጀት ዓመት የዘጠኝ ወር የውጭ ግንኙነት ዕቅድ አፈጻጸም',
+               align: 'left'
+           },
+           
+           xAxis: {
+               categories: ['የ2015 ዓመታዊ ግብ', 'የ2015 የ9 ወራት ዕቅድ2', 'የ2015 የ9 ወራት አፈጻጸም', 'የ9 ወር አፈፃፀም(በመቶኛ)']
+           },
+           yAxis: {
+               title: {
+               text: 'የዘጠኝ ወር አፈጻጸም'
+               }
+           },
+           credits: {
+               enabled: false
+           },
+           series: [{
+               name: 'የተካሄዱ የኢንቨስትመንት የፕሮሞሽኖች መድረኮች እና የተገኙ ውጤቶች በመቶኛ',
+               data: [438.9, 73, 97.9, 34.1]
+           }, {
+               name: 'ማስተሳሰር የተቻለ ላኪዎች በቁጥር',
+               data: [400.2, 68.6, 91.3, 33.2]
+           }, 
+           {
+               name: 'አዲስ የተመቻቹ የወጪ ንግድ መዳረሻ ገበያዎች በቁጥር',
+               data: [38.6, 4.4, 6.6, 48.4]
+           },{
+               name: 'ማስተዋወቅ የተቻለባቸው የቱሪዝም የፕሮሞሽኖች መድረኮች እና የተገኙ ውጤቶች በመቶኛ',
+               data: [674.6, 111.3, 127.6, 14.6]
+           }, 
+           {
+               name: 'አገራችንን በቱር ፓኬጃቸው ያስገቡ ቱር ኦፕሬተሮች በቁጥር',
+               data: [-221.1, -39.3, 20.7, -22.5]
+           }, 
+           {
+               name: 'ወደ አገራችን ቱሪስቶችን የላኩ የቱር ኦፕሬተሮች በቁጥር',
+               data: [-218.1, -48.3, 25.7, -12.5]
+           }, 
+           {
+               name: 'መብታቸው የተከበረላቸው በውጭ ሀገር የሚኖሩ ዜጎች በቁጥር',
+               data: [-2.1, -8.3, 2.7, -32.5]
+           }, 
+           {
+               name: 'በውጭ አገራት በአስቸጋሪ ሁኔታ ካሉ ዜጎች የተመለሱ በቁጥር',
+               data: [-2.1, -8.3, 2.7, -32.5]
+           }, 
+           {
+               name: 'ወደ ሀገር የተላከ ገንዘብ (ሬሚታንስ) በዶላር',
+               data: [-2.1, -8.3, 2.7, -32.5]
+           }, 
+           {
+               name: 'በቦንድ ሽያጭ የተሰበሰበ ሀብት በዶላር',
+               data: [-2.1, -8.3, 2.7, -32.5]
+           }
+           ]
+           });
+           </script>
+       </div>
+
+       <div class="col-md-4 col-sm-6">
+                    <div class="content-box">
+
+                       <div class="chart-box m-2">
+                            <figure class="highcharts-figure">
+                            <div id="justice"></div>
+                                   
+                           </figure>
+                           </div>
+                   </div>
+
+           <script>
+           Highcharts.chart('justice', {
+           chart: {
+               type: 'area'
+           },
+           title: {
+               text: 'የፍትህ ዘርፍ የ2015 በጀት ዓመት የዘጠኝ ወር ዕቅድ አፈጻጸም',
+               align: 'left'
+           },
+           
+           xAxis: {
+               categories: ['የ2015 ዓመታዊ ግብ', 'የ2015 የ9 ወራት ዕቅድ2', 'የ2015 የ9 ወራት አፈጻጸም', 'የ9 ወር አፈፃፀም(በመቶኛ)']
+           },
+
+           yAxis: {
+               title: {
+               text: 'የዘጠኝ ወር አፈጻጸም'
+               }
+           },
+           credits: {
+               enabled: false
+           },
+           series: [{
+               name: 'የፍትሐብሄር ጉዳዮች በድርድር መፍታት ምጣኔ በመቶኛ',
+               data: [438.9, 73, 97.9, 34.1]
+           }, {
+               name: 'የፍትሐብሄር ጉዳዮች ክርክር የመርታት ምጣኔ በመቶኛ ',
+               data: [400.2, 68.6, 91.3, 33.2]
+           }, 
+           {
+               name: 'የፍትሐብሄር ይግባኝ ክርክሮች የመርታት ምጣኔ በመቶኛ',
+               data: [38.6, 4.4, 6.6, 48.4]
+           },{
+               name: 'የፍትሐብሔር ፍርድ አፈፃፀም ምጣኔ በመቶኛ',
+               data: [674.6, 111.3, 127.6, 14.6]
+           }, 
+           {
+               name: 'ለመንግስት ተቋማት የተሰጠ የፍትሐ ብሔር ህግ ምክር አገልግሎት በመቶኛ',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'ውሳኔ የተሰጣቸው ለአስተዳደር ችሎት የቀረቡ መዝገቦች ምጣኔ በመቶኛ',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'የብሔራዊ የሰብዓዊ መብት ድርጊት መርሀ ግብር አፈጻጸም ምጣኔ በመቶኛ',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'የወንጀል ምርመራ መዛግብት ዉሳኔ የመስጠት (ማጥራት) ምጣኔ በመቶኛ',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'የወንጀል ክሶችን የመርታት ምጣኔ በመቶኛ',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'ነጻ የህግ አገልግሎት ያገኙ ልዩ ድጋፍ የሚሹ ዜጎች ድርሻ በመቶኛ',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'ጥበቃ ለሚያስፈልጋቸው ጠቋሚና ምስክሮች ጥበቃ የማድረግ ምጣኔ በመቶኛ',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'የከለላ ዉሳኔዎችን የማይቀበሉ ወይም የሚያደናቅፉ ሰዎችን በህግ እንዲጠየቁ የማድረግ ምጣኔ በመቶኛ',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }
+           ]
+           });
+           </script>
+       </div>
+           
+
+     </div>
+    </div>
+</section>
+
+</main>
+
+    <footer class="site-account text-right text-muted">
+        <div class="container">
+            <small>
+          <a href="#">
+            Copy right Reserved &#169; &nbsp;MoPD  <script>document.write( new Date().getFullYear() );</script>
+          </a>
+          
+        </small>
+        </div>
+    </footer>
+    <script>
+        document.getElementsByTagName('html')[0].className += ' js';
+    </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/plottable.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+ 
+    <script type="text/javascript" src="js/infocard.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    
+
+
+
+
+</body>
+
+</html>

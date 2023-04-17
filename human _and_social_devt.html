@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+
+<html lang="en_GB">
+
+
+
+<!-- Mirrored from data.gov.sg/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 12:31:30 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2020-12-29T10:24:02/html5.min.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/select2.css" />
+    <link rel="stylesheet" type="text/css" href="css/datagovsg.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/infocard.css" />
+    <link rel="stylesheet" type="text/css" href="css/plottable.css" />
+
+
+    <script src="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    
+    <title>
+    
+
+    </title>
+
+<style>
+
+</style>
+</head>
+
+<body>
+  
+    <!-- <nav class="site-nav">
+        <div class="container">
+            <a href="index.html">
+                <img class="site-logo" src="images/logo.svg" alt="Data.gov.sg" title="Data.gov.sg" />
+            </a>
+            <a href="index.html" class="site-title">Data.gov.sg</a>
+            <div class="flex-spacer"></div>
+
+            <a class="site-link ga-nav-blog" href='https://blog.data.gov.sg/'>Blog</a>
+            <a class="site-link ga-nav-developers" href='developer.html'>Developers</a>
+            <a class="site-link ga-nav-request" href='https://github.com/datagovsg/datagovsg-datasets/issues/new?title=Dataset%20request:%20%3Cdataset%20title%3E'>Data Request</a>
+
+        </div>
+    </nav> -->
+
+    <div class="collapse topic-collapse">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Economy href="group/economy.html">
+                        <img class="hover-on" src=group_icons/active/economy.svg>
+                        <img class="hover-off" src=group_icons/inactive/economy.svg>
+                        <h5 class="topic-title"><small>Economy</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Education href="group/education.html">
+                        <img class="hover-on" src=group_icons/active/education.svg>
+                        <img class="hover-off" src=group_icons/inactive/education.svg>
+                        <h5 class="topic-title"><small>Education</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Environment href="group/environment.html">
+                        <img class="hover-on" src=group_icons/active/environment.svg>
+                        <img class="hover-off" src=group_icons/inactive/environment.svg>
+                        <h5 class="topic-title"><small>Environment</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Finance href="group/finance.html">
+                        <img class="hover-on" src=group_icons/active/finance.svg>
+                        <img class="hover-off" src=group_icons/inactive/finance.svg>
+                        <h5 class="topic-title"><small>Finance</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Health href="group/health.html">
+                        <img class="hover-on" src=group_icons/active/health.svg>
+                        <img class="hover-off" src=group_icons/inactive/health.svg>
+                        <h5 class="topic-title"><small>Health</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Infrastructure href="group/infrastructure.html">
+                        <img class="hover-on" src=group_icons/active/infrastructure.svg>
+                        <img class="hover-off" src=group_icons/inactive/infrastructure.svg>
+                        <h5 class="topic-title"><small>Infrastructure</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Society href="group/society.html">
+                        <img class="hover-on" src=group_icons/active/society.svg>
+                        <img class="hover-off" src=group_icons/inactive/society.svg>
+                        <h5 class="topic-title"><small>Society</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Technology href="group/technology.html">
+                        <img class="hover-on" src=group_icons/active/technology.svg>
+                        <img class="hover-off" src=group_icons/inactive/technology.svg>
+                        <h5 class="topic-title"><small>Technology</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Transport href="group/transport.html">
+                        <img class="hover-on" src=group_icons/active/transport.svg>
+                        <img class="hover-off" src=group_icons/inactive/transport.svg>
+                        <h5 class="topic-title"><small>Transport</small></h5>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header " style="background-image: url(images/header-home.jpg)">
+        <h1 class="headline container text-center">
+            Human Development and Social Sector
+        </h1>
+
+    </header>
+    <main class="site-main">
+
+        <div class="topics-section">
+            <div class="container">
+                <div class="topics-row">
+
+                </div>
+            </div>
+        </div>
+
+<section>
+    <div class="container">
+                <h2 class="section-title text-muted">Human Development and Social Sector Performance Report</h2>
+                <div class="row row-scroll">
+                    
+
+   
+            <!--second graphs start  -->
+            <div class="col-md-4 col-sm-6">
+                <div class="content-box">
+                   <div class="chart-box m-2">
+                        <figure class="highcharts-figure">
+                        <div id="education"></div>
+                               
+                       </figure>
+                       </div>
+               </div>
+
+       <script>
+       Highcharts.chart('education', {
+       chart: {
+           type: 'area'
+       },
+       title: {
+           text: 'የትምህርት ዘርፍ የ2015 በጀት ዓመት የዘጠኝ ወር ዕቅድ አፈጻጸም',
+           align: 'left'
+       },
+       
+       xAxis: {
+           categories: ['የ2015 ዓመታዊ ግብ', 'የ2015 የ9 ወራት ዕቅድ2', 'የ2015 የ9 ወራት አፈጻጸም', 'የ9 ወር አፈፃፀም(በመቶኛ)']
+       },
+       yAxis: {
+           title: {
+           text: 'የትምህርት ዘርፍ አፈጻጽም'
+           }
+       },
+       credits: {
+           enabled: false
+       },
+       series: [{
+           name: 'አዲስ የመደበኛ ተማሪዎች ቅበላ በቁጥር',
+           data: [972.4, 4103.7, 977.0, 1525.4]
+       }, {
+           name: 'ራስ ገዝ ዩኒቨርሲቲዎች በቁጥር',
+           data: [400.2, 68.6, 91.3, 33.2]
+       }, 
+       {
+           name: 'የከፍተኛ ትምህርት ተማሪዎች አመታዊ የቅበላ ዕድገት',
+           data: [-3164.6, -13988.5, -3575.8, -6074]
+       },{
+           name: 'የከፍተኛ ትምህርት ጥቅል ተሳትፎ',
+           data: [586.9, 2723.5, 564.4,1373.1]
+       }
+    
+       ]
+       });
+       </script>
+   </div>
+
+        <div class="col-md-4 col-sm-6">
+                    <div class="content-box">
+                       <div class="chart-box m-2">
+                            <figure class="highcharts-figure">
+                            <div id="skills"></div>
+                                   
+                           </figure>
+                           </div>
+                   </div>
+
+           <script>
+           Highcharts.chart('skills', {
+           chart: {
+               type: 'area'
+           },
+           title: {
+               text: 'የ2015 በጀት ዓመት የስራና ክህሎት ዘርፍ የዘጠኝ ወር አፈጻጸም',
+               align: 'left'
+           },
+           
+           xAxis: {
+               categories: ['የ2015 ዓመታዊ ግብ', 'የ2015 የ9 ወራት ዕቅድ2', 'የ2015 የ9 ወራት አፈጻጸም', 'የ9 ወር አፈፃፀም(በመቶኛ)']
+           },
+           yAxis: {
+               title: {
+               text: 'የዘጠኝ ወር አፈጻጸም'
+               }
+           },
+           credits: {
+               enabled: false
+           },
+           series: [{
+               name: 'ብቃታቸው በምዘና የተረጋገጠ መደበኛ ስልጠና አጠናቃቂዎች በቁጥር',
+               data: [438.9, 73, 97.9, 34.1]
+           }, {
+               name: 'ብቃታቸው በምዘና የተረጋገጠ የገበያ-ተኮር አጫጭር ስልጠና አጠናቃቂዎች በቁጥር',
+               data: [400.2, 68.6, 91.3, 33.2]
+           }, 
+           {
+               name: 'በቴ/ሙ/ስ ተቋማት የሴት ሰልጣኞች ተሳትፎ በመቶኛ',
+               data: [38.6, 4.4, 6.6, 48.4]
+           },{
+               name: 'አዲስ የመደበኛ ተማሪዎች ቅበላ በቁጥር',
+               data: [674.6, 111.3, 127.6, 14.6]
+           }, 
+           {
+               name: 'በገበያ ተኮር የአጫጭር ስልጠና የሚሰለጥኑ ሰልጣኞች ብዛት በቁጥር',
+               data: [-221.1, -39.3, 20.7, -22.5]
+           }, 
+           {
+               name: 'ያደገ የተቋማት አዲስ ሰልጣኝ ቅበላ ምጣኔ በመቶኛ',
+               data: [-218.1, -48.3, 25.7, -12.5]
+           }, 
+           {
+               name: 'አቅማቸው በስልጠና የተገነባ አርሶ(አርብቶ) አደሮች በቁጥር',
+               data: [-2.1, -8.3, 2.7, -32.5]
+           }
+           ]
+           });
+           </script>
+       </div>
+
+       <div class="col-md-4 col-sm-6">
+                    <div class="content-box">
+
+                       <div class="chart-box m-2">
+                            <figure class="highcharts-figure">
+                            <div id="technology"></div>
+                                   
+                           </figure>
+                           </div>
+                   </div>
+
+           <script>
+           Highcharts.chart('technology', {
+           chart: {
+               type: 'area'
+           },
+           title: {
+               text: 'የቴክኖሎጂና ኢኖቬሽን ዘርፍ የ2015 በጀት ዓመት የዘጠኝ ወር ዕቅድ አፈጻጸም',
+               align: 'left'
+           },
+           
+           xAxis: {
+               categories: ['የ2015 ዓመታዊ ግብ', 'የ2015 የ9 ወራት ዕቅድ2', 'የ2015 የ9 ወራት አፈጻጸም', 'የ9 ወር አፈፃፀም(በመቶኛ)']
+           },
+           yAxis: {
+               title: {
+               text: 'የዘጠኝ ወር አፈጻጸም'
+               }
+           },
+           credits: {
+               enabled: false
+           },
+           series: [{
+               name: 'በኦንላይን የሚሰጡ የመንግስት አገልገሎቶች ድርሻ በመቶኛ',
+               data: [438.9, 73, 97.9, 34.1]
+           }, {
+               name: 'በመንግስት ክላውድ የሚሰጡ አገልግሎቶች ብዛት በመቶኛ ',
+               data: [400.2, 68.6, 91.3, 33.2]
+           }, 
+           {
+               name: 'ሙሉ በሙሉ በኤሌክትሮኒክ ታገዘው ለህብረተሰቡ የደረሱ አገልግሎቶች በቁጥር',
+               data: [38.6, 4.4, 6.6, 48.4]
+           },{
+               name: 'ከ15 ዓመት ዕድሜ በላይ የሆኑ በዲጂታል ID ዳታቤዝ የታወቁ ነዋሪዎች በመቶኛ',
+               data: [674.6, 111.3, 127.6, 14.6]
+           }, 
+           {
+               name: 'የተገነቡ ኢንተርፕራይዞች በቁጥር',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'የተደገፉ የቴክስታርትአፖች በቁጥር',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'ውጤታማ የሁኑ የቴክስታርትአፖች በቁጥር',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'የተገነቡ ኢንዱስትሪዎች ብዛት በቁጥር',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'የተደገፉ የቴክክስታርትአፕ ኢንዱስትሪዎች ብዛት በቁጥር',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'ውጤታማ የሆኑ የቴክስታርትአፕ ኢንዱስትሪዎች ብዛት በቁጥር',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'በBusiness Process Outsourcing የተሰማሩ ድርጅቶች በቁጥር',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'የሞባይል ተጠቃሚዎች ጥራት ያለው ተደራሽነት በመቶኛ',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'የኢንተርኔት ተጠቃሚዎች ተደራሽነት በመቶኛ',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }
+           ]
+           });
+           </script>
+       </div>
+           
+
+     </div>
+    </div>
+</section>
+
+</main>
+
+    <footer class="site-account text-right text-muted">
+        <div class="container">
+            <small>
+          <a href="#">
+            Copy right Reserved &#169; &nbsp;MoPD  <script>document.write( new Date().getFullYear() );</script>
+          </a>
+          
+        </small>
+        </div>
+    </footer>
+    <script>
+        document.getElementsByTagName('html')[0].className += ' js';
+    </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/plottable.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+ 
+    <script type="text/javascript" src="js/infocard.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    
+
+
+
+
+</body>
+
+</html>

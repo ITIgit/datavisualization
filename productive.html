@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+
+<html lang="en_GB">
+
+
+
+<!-- Mirrored from data.gov.sg/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Apr 2023 12:31:30 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2020-12-29T10:24:02/html5.min.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/select2.css" />
+    <link rel="stylesheet" type="text/css" href="css/datagovsg.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/infocard.css" />
+    <link rel="stylesheet" type="text/css" href="css/plottable.css" />
+
+
+    <script src="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    
+    <title>
+    
+
+    </title>
+
+<style>
+
+</style>
+</head>
+
+<body>
+  
+    <!-- <nav class="site-nav">
+        <div class="container">
+            <a href="index.html">
+                <img class="site-logo" src="images/logo.svg" alt="Data.gov.sg" title="Data.gov.sg" />
+            </a>
+            <a href="index.html" class="site-title">Data.gov.sg</a>
+            <div class="flex-spacer"></div>
+
+            <a class="site-link ga-nav-blog" href='https://blog.data.gov.sg/'>Blog</a>
+            <a class="site-link ga-nav-developers" href='developer.html'>Developers</a>
+            <a class="site-link ga-nav-request" href='https://github.com/datagovsg/datagovsg-datasets/issues/new?title=Dataset%20request:%20%3Cdataset%20title%3E'>Data Request</a>
+
+        </div>
+    </nav> -->
+
+    <div class="collapse topic-collapse">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Economy href="group/economy.html">
+                        <img class="hover-on" src=group_icons/active/economy.svg>
+                        <img class="hover-off" src=group_icons/inactive/economy.svg>
+                        <h5 class="topic-title"><small>Economy</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Education href="group/education.html">
+                        <img class="hover-on" src=group_icons/active/education.svg>
+                        <img class="hover-off" src=group_icons/inactive/education.svg>
+                        <h5 class="topic-title"><small>Education</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Environment href="group/environment.html">
+                        <img class="hover-on" src=group_icons/active/environment.svg>
+                        <img class="hover-off" src=group_icons/inactive/environment.svg>
+                        <h5 class="topic-title"><small>Environment</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Finance href="group/finance.html">
+                        <img class="hover-on" src=group_icons/active/finance.svg>
+                        <img class="hover-off" src=group_icons/inactive/finance.svg>
+                        <h5 class="topic-title"><small>Finance</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Health href="group/health.html">
+                        <img class="hover-on" src=group_icons/active/health.svg>
+                        <img class="hover-off" src=group_icons/inactive/health.svg>
+                        <h5 class="topic-title"><small>Health</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Infrastructure href="group/infrastructure.html">
+                        <img class="hover-on" src=group_icons/active/infrastructure.svg>
+                        <img class="hover-off" src=group_icons/inactive/infrastructure.svg>
+                        <h5 class="topic-title"><small>Infrastructure</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Society href="group/society.html">
+                        <img class="hover-on" src=group_icons/active/society.svg>
+                        <img class="hover-off" src=group_icons/inactive/society.svg>
+                        <h5 class="topic-title"><small>Society</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Technology href="group/technology.html">
+                        <img class="hover-on" src=group_icons/active/technology.svg>
+                        <img class="hover-off" src=group_icons/inactive/technology.svg>
+                        <h5 class="topic-title"><small>Technology</small></h5>
+                    </a>
+                </div>
+
+                <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+                    <a class="topic-link ga-nav-topic-selector" data-ga=Transport href="group/transport.html">
+                        <img class="hover-on" src=group_icons/active/transport.svg>
+                        <img class="hover-off" src=group_icons/inactive/transport.svg>
+                        <h5 class="topic-title"><small>Transport</small></h5>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header " style="background-image: url(images/header-home.jpg)">
+        <h1 class="headline container text-center">
+           Productive Sector 
+        </h1>
+
+    </header>
+    <main class="site-main">
+
+        <div class="topics-section">
+            <div class="container">
+                <div class="topics-row">
+
+                </div>
+            </div>
+        </div>
+
+<section>
+    <div class="container">
+                <h2 class="section-title text-muted">Productive Sector Performance Report</h2>
+                <div class="row row-scroll">
+                    
+
+   
+            <!--second graphs start  -->
+            <div class="col-md-4 col-sm-6">
+                <div class="content-box">
+                   <div class="chart-box m-2">
+                        <figure class="highcharts-figure">
+                        <div id="mining"></div>
+                               
+                       </figure>
+                       </div>
+               </div>
+
+       <script>
+       Highcharts.chart('mining', {
+       chart: {
+           type: 'area'
+       },
+       title: {
+           text: 'የ2015 በጀት ዓመት የማዕድን ዘርፍ የዘጠኝ ወር አፈጻጸም',
+           align: 'left'
+       },
+       
+       xAxis: {
+           categories: ['የ2015 ዓመታዊ ግብ', 'የ2015 የ9 ወራት ዕቅድ2', 'የ2015 የ9 ወራት አፈጻጸም', 'የ9 ወር አፈፃፀም(በመቶኛ)']
+       },
+       yAxis: {
+           title: {
+           text: 'የዘጠኝ ወር አፈጻጸም'
+           }
+       },
+       credits: {
+           enabled: false
+       },
+       series: [{
+           name: 'ለሀገር ውስጥ ባለሃብቶች የፍለጋና ምርት፣ ፕሮሰሲንግ ፈቃድ መስጠት በቁጥር',
+           data: [972.4, 4103.7, 977.0, 1525.4]
+       }, {
+           name: 'ለውጭ ባለሃብቶች የፍለጋና ምርት፣ ፕሮሰሲንግ ፈቃድ መስጠት በቁጥር',
+           data: [400.2, 68.6, 91.3, 33.2]
+       }, 
+       {
+           name: 'አዲስ በሚሰጡ የፍለጋና ልማት ፈቃድ የሚመዘገብ ካፒታል መጠን በሚሊዮን ብር',
+           data: [-3164.6, -13988.5, -3575.8, -6074]
+       },{
+           name: 'የባህላዊ አምራች ኢንተርፕራይዞችን ብዛት በቁጥር',
+           data: [586.9, 2723.5, 564.4,1373.1]
+       }, 
+       {
+           name: 'የወርቅ ኢንዱስትሪዎችን የማምረት አቅም ማሳደግ በመቶኛ',
+           data: [44.9, 48.6, 52.3, 52.3]
+           
+       },{
+        name: 'የሲሚንቶ አምራች ኢንዱስትሪዎችን ምርትና ምርታማነታቸውን ማሳደግ በመቶኛ',
+        data: [58.9, 23.5, 64.4,13.1]
+    },{
+        name: 'የብረት ኢንዱስትሪዎችን የማምረት አቅም ማሳደግ በመቶኛ',
+        data: [56.9, 72.5, 54.4,33.1]
+    }
+       
+       ]
+       });
+       </script>
+   </div>
+
+        <div class="col-md-4 col-sm-6">
+                    <div class="content-box">
+                       <div class="chart-box m-2">
+                            <figure class="highcharts-figure">
+                            <div id="agriculture"></div>
+                                   
+                           </figure>
+                           </div>
+                   </div>
+
+           <script>
+           Highcharts.chart('agriculture', {
+           chart: {
+               type: 'area'
+           },
+           title: {
+               text: 'የ2015 በጀት ዓመት የግብርና ዘርፍ የዘጠኝ ወር አፈጻጸም',
+               align: 'left'
+           },
+           
+           xAxis: {
+               categories: ['የ2015 ዓመታዊ ግብ', 'የ2015 የ9 ወራት ዕቅድ2', 'የ2015 የ9 ወራት አፈጻጸም', 'የ9 ወር አፈፃፀም(በመቶኛ)']
+           },
+           yAxis: {
+               title: {
+               text: 'የዘጠኝ ወር አፈጻጸም'
+               }
+           },
+           credits: {
+               enabled: false
+           },
+           series: [{
+               name: 'በአነስተኛ አርሶ አደሮች አጠቃላይ የለማ መሬት በሚ/ን ሄ/ር',
+               data: [438.9, 73, 97.9, 34.1]
+           }, {
+               name: 'የማር ምርት በሺህ ቶን',
+               data: [400.2, 68.6, 91.3, 33.2]
+           }, 
+           {
+               name: 'የዓሣ ምርት በሺህ ቶን',
+               data: [38.6, 4.4, 6.6, 48.4]
+           },{
+               name: 'በምግብና መጠጥ የዳነ የውጭ ምንዛሬ',
+               data: [674.6, 111.3, 127.6, 14.6]
+           }, 
+           {
+               name: 'በኬሚካልና የኮንስትራክሽን ግብዓቶች የዳነ የውጭ ምንዛሬ',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'የዶሮ ስጋ ምርት በሺህ ቶን',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'አጠቃላይ የስጋ ምርት በሺህ ቶን',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'አጠቃላይ የወተት ምርት በሚሊዮን ሊትር',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'በከተማ በአትክልትና ፍራፍሬ ልማት የተገኘ ምርት ሺህ ቶን',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }, 
+           {
+               name: 'በከተማ በሰብል ልማት የተመረተ ምርት በሺህ ቶን',
+               data: [-228.1, -38.3, 29.7, -22.5]
+           }
+           
+           ]
+           });
+           </script>
+       </div>
+
+       <div class="col-md-4 col-sm-6">
+
+        <div class="content-box">
+
+            <div class="chart-box m-2">
+                <figure class="highcharts-figure">
+                    <div id="tourism"></div>
+                   
+                  </figure>
+            </div>
+
+        </div>
+
+<script>
+Highcharts.chart('tourism', {
+
+title: {
+text: 'የ2015 በጀት ዓመት የቱሪዝም ዘርፍ የዘጠኝ ወር አፈጻጸም',
+align: 'left'
+},
+
+
+yAxis: {
+title: {
+text: ' የዘጠኝ ወር አፈጻጸም'
+},
+gridLineColor: '#ffffff',
+gridLineWidth: 0,
+},
+
+xAxis: {
+categories: ['የ2015 ዓመታዊ ግብ', 'የ2015 የ9 ወራት ዕቅድ2', 'የ2015 የ9 ወራት አፈጻጸም', 'የ9 ወር አፈፃፀም(በመቶኛ)']
+},
+credits: {
+enabled: false
+},
+
+legend: {
+layout: 'vertical',
+align: 'right',
+verticalAlign: 'middle'
+},
+
+plotOptions: {
+series: {
+label: {
+connectorAllowed: false
+
+},
+label: {
+    enabled: false,
+},
+
+}
+},
+
+series: [{
+name: 'የለሙ አዳዲስ የቱሪዝም መዳረሻዎች በቁጥር ',
+data: [500.3, 2345.5, 540, 33.8]
+},{
+name: 'እሴት የተጨመረባቸው ነባር የቱሪዝም መዳረሻዎች በቁጥር ',
+data: [1234.4, 3456.9, 1230.8, 2310.9]
+},{
+name: 'አገራዊና በዓለም  ባህላዊና ተፈጥሯዊ ቅርሶች በቁጥር',
+data: [908.1, 450, 7659.4, 28.1]
+},{
+    name: 'ባህላዊ ሃብቶች የተካሄደ ጥገና እና የሳይት ልማት በቁጥር',
+    data: [120.1, 543, 4560.4, 127.1]
+    },
+    {
+        name: 'የቱሪስት ምርቶች ዓይነት በቁጥር',
+        data: [987.1, 19, 43.4, 67.1]
+        },
+        {
+            name: 'ስታንዳርድ የወጣላቸው የቱሪስት ምርቶች በቁጥር',
+            data: [7890.1, 984, 2690.4, 230.1]
+            },
+            {
+                name: 'ያደገ የአገር ውስጥ ባለሃብቶች በቁጥር',
+                data: [231.1, 322, 514.4, 233.1]
+                },
+                {
+                    name: 'የኢንቨስትመንት ፈቃድ የወሰዱ/የተመዘገቡ ባለሃብቶች በቁጥር',
+                    data: [934.1, 844, 956.4, 171.1]
+                    },
+                {
+                    name: 'አገልግሎት መስጠት የጀመሩ ባለሃብቶች ብዛት በቁጥር',
+                    data: [334.1, 54, 2543.4, 2568.1]
+                    },
+                    {
+                        name: 'የውጭ ቱሪስቶች በቁጥር',
+                        data: [2122.1, 327, 257.8, 248.9]
+                        },
+                        {
+                            name: 'ገቢ በውጭ ምንዛሪ በቢሊዮን ዶላር',
+                            data: [266.4, 427, 177.4, 226.1]
+                            },
+                            {
+                                name: 'ያደገ የቱሪዝም ገበያ ድርሻ በመቶኛ',
+                                data: [623.1, 7231, 731.4, 2.1]
+                                }
+],
+
+
+
+responsive: {
+rules: [{
+condition: {
+maxWidth: 500
+},
+chartOptions: {
+legend: {
+    layout: 'horizontal',
+    align: 'center',
+    verticalAlign: 'bottom'
+}
+}
+}]
+}
+
+});
+</script>
+    </div>
+
+     </div>
+    </div>
+</section>
+
+</main>
+
+    <footer class="site-account text-right text-muted">
+        <div class="container">
+            <small>
+          <a href="#">
+            Copy right Reserved &#169; &nbsp;MoPD  <script>document.write( new Date().getFullYear() );</script>
+          </a>
+          
+        </small>
+        </div>
+    </footer>
+    <script>
+        document.getElementsByTagName('html')[0].className += ' js';
+    </script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/plottable.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+ 
+    <script type="text/javascript" src="js/infocard.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    
+
+
+
+
+</body>
+
+</html>
